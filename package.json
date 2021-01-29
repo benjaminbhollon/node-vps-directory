@@ -1,0 +1,24 @@
+{
+  "name": "vps-directory",
+  "version": "1.0.0",
+  "description": "Routes different hosts to different ports",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --name directory",
+    "stop": "pm2 delete directory"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminbhollon/node-vps-directory.git"
+  },
+  "author": "Benjamin Hollon",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/benjaminbhollon/node-vps-directory/issues"
+  },
+  "homepage": "https://github.com/benjaminbhollon/node-vps-directory#readme",
+  "dependencies": {
+    "bouncy": "^3.2.2",
+    "pm2": "^4.5.2"
+  }
+}
