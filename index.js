@@ -10,7 +10,6 @@ var server = bouncy(function (req, res, bounce) {
     res.writeHead(301, {
       Location: '//' + req.headers.host.replace('www.', '') + req.url
     });
-    console.log('//' + req.headers.host.replace('www.', '') + req.url);
     res.end();
   } else {
     res.statusCode = 404;
