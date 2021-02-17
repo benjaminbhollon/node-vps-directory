@@ -8,7 +8,7 @@ var server = bouncy(function (req, res, bounce) {
     bounce(directory[req.headers.host]);
   } else if (directory[req.headers.host.slice(4)] !== undefined) {
     res.writeHead(301, {
-      Location: req.url.replace('www.', '')
+      Location: '//' + req.headers.host.replace('www.', '') + req.url
     });
     console.log(req.url);
   } else {
