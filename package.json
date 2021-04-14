@@ -19,6 +19,6 @@
   "homepage": "https://github.com/benjaminbhollon/node-vps-directory#readme",
   "dependencies": {
     "bouncy": "^3.2.2",
-    "pm2": "^4.5.2"
+    "pm2": "^4.5.6"
   }
 }
