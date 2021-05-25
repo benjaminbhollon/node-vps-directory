@@ -6,7 +6,7 @@ const directory = require('./directory.json');
 function createHandler(protocol) {
   return (req, res, bounce) => {
     if (directory[req.headers.host] !== undefined) {
-      if (protocol === 'http' && String(directory[req.headers.host])[0])
+      if (protocol === 'http' && String(directory[req.headers.host])[0] === '4')
         return res.writeHead(301, {
           Location: 'https://' + req.headers.host + req.url
         });
