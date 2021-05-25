@@ -1,6 +1,6 @@
 {
   "name": "vps-directory",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Routes different hosts to different ports",
   "main": "index.js",
   "scripts": {
