@@ -1,6 +1,0 @@
-{
-  "ssl": {
-    "key": "../../ssl/seewitheyesclosed.com.key.pem",
-    "cert": "../../ssl/seewitheyesclosed.com.pem"
-  }
-}
