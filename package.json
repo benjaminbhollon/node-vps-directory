@@ -1,11 +1,12 @@
 {
   "name": "vps-directory",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Routes different hosts to different ports",
   "main": "index.js",
   "scripts": {
     "start": "pm2 start index.js --name directory",
-    "stop": "pm2 delete directory"
+    "stop": "pm2 delete directory",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "dependencies": {
     "bouncy": "^3.2.2",
     "pm2": "^4.5.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
